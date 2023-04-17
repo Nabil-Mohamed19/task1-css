@@ -1,0 +1,421 @@
+/* start global */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+a {
+    color: var(--p-sec-color);
+}
+
+a:focus {
+    color: var(--p-color);
+}
+
+button {
+    all: unset;
+}
+
+.container {
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+:root {
+    --main-color: #ffffff;
+    --sec-color: #0d9979;
+    --p-color: #4a4a4a;
+    --p-sec-color: #636363;
+    --card-color: #eae6db;
+}
+
+/* end global */
+/* start header */
+header {
+    box-shadow: 8px -14px 9px 19px #00000038;
+    position: relative;
+    z-index: 4;
+}
+
+header .container {
+    overflow: hidden;
+}
+
+.logo {
+    width: 20%;
+    text-align: center;
+    display: inline-block;
+    padding: 15px;
+}
+
+.links {
+    float: right;
+    width: 40%;
+    text-align: center;
+    padding: 10px 10px 0px;
+}
+
+header ul li {
+    display: inline-block;
+    padding: 15px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* end header */
+/* start Home  */
+.home {
+    background-image: url("../images/bc.jpg");
+    height: 88vh;
+    background-size: cover;
+    text-align: center;
+    position: relative;
+}
+
+.home .content {
+    padding-top: 15%;
+    padding-bottom: 25px;
+    text-align: center;
+}
+
+.content h1 {
+    font-size: 35px;
+    color: var(--sec-color);
+}
+
+.content pre {
+    color: var(--p-color);
+    font-size: 16px;
+    letter-spacing: -1px;
+}
+
+.home button {
+    background-color: transparent;
+    border: 2px solid var(--sec-color);
+    border-radius: 5px;
+    padding: 5px 20px;
+    color: var(--sec-color);
+    cursor: pointer;
+}
+
+/* end home */
+/* strat arrow */
+.arrow {
+    position: absolute;
+    right: 50px;
+    top: 70%;
+    width: 40px;
+    height: 40px;
+    background-color: #eef1ef;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.arrow a {
+    color: var(--sec-color);
+    display: block;
+    padding: 8px;
+    font-size: 25px;
+}
+
+/* end arrow */
+/* start about */
+.about {
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+.about .container {
+    position: relative;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.about img {
+    height: 190px;
+    margin-right: 25px;
+    margin-bottom: 45px;
+}
+
+.about .text {
+    display: inline-block;
+    position: absolute;
+    line-height: 1.4;
+    margin-bottom: 30px;
+}
+
+.about .text h2 {
+    font-size: 25px;
+    color: var(--sec-color);
+    letter-spacing: 2px;
+}
+
+.about .text pre {
+    color: var(--p-color);
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.about .text p {
+    color: var(--p-color);
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.about button {
+    background-color: transparent;
+    border: 2px solid var(--sec-color);
+    border-radius: 5px;
+    padding: 5px 15px;
+    color: var(--sec-color);
+    cursor: pointer;
+}
+
+.about .cards {
+    text-align: center;
+}
+
+.about .card {
+    display: inline-block;
+    width: 19%;
+    margin: 15px;
+    border: 2px solid var(--sec-color);
+}
+
+.about .card a {
+    color: var(--sec-color);
+    font-size: 30px;
+    display: block;
+    margin-top: 10px;
+}
+
+.about .card h3 {
+    font-weight: bold;
+    font-size: 30px;
+    padding: 15px;
+}
+
+.about .card p {
+    color: var(--p-sec-color);
+    margin-bottom: 10px;
+}
+
+/*  end about */
+/* start services */
+.services {
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.title {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.title h2 {
+    color: var(--p-color);
+    font-size: 30px;
+}
+
+.title::after {
+    content: ",,";
+    position: absolute;
+    font-size: 60px;
+    font-weight: bold;
+    color: var(--sec-color);
+    top: -96%;
+    right: 39.7%;
+}
+
+.title::before {
+    content: "،،";
+    position: absolute;
+    font-size: 60px;
+    font-weight: bold;
+    color: var(--sec-color);
+    left: 39%;
+    top: -57%;
+}
+
+.services .container {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.services .card {
+    display: inline-block;
+    width: 26%;
+    margin: 15px;
+    padding: 10px 5px 0;
+    border: 2px solid var(--sec-color);
+    background-color: var(--card-color);
+}
+
+.services .card h3 {
+    font-weight: bold;
+    color: var(--p-color);
+    font-size: 20px;
+    margin: 10px;
+}
+
+.services .card p {
+    color: #777;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.services .card span {
+    color: var(--p-color);
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.services .card a {
+    color: var(--sec-color);
+    font-size: 25px;
+    display: block;
+}
+
+/* end services */
+/* strat support us */
+.support .title {
+    position: relative;
+    margin-bottom: 10px;
+    bottom: -50px;
+}
+
+.support .title h2 {
+    color: var(--main-color);
+    font-size: 30px;
+}
+
+.support .title::after {
+    content: ",,";
+    position: absolute;
+    font-size: 60px;
+    font-weight: bold;
+    color: var(--sec-color);
+    top: -96%;
+    right: 41.7%;
+}
+
+.support .title::before {
+    content: "،،";
+    position: absolute;
+    font-size: 60px;
+    font-weight: bold;
+    color: var(--sec-color);
+    left: 41%;
+    top: -57%;
+}
+
+.support {
+    position: relative;
+    text-align: center;
+    margin-bottom: -4px;
+}
+
+video {
+    width: 100%;
+}
+
+.support .container {
+    padding-left: 100px;
+    padding-right: 100px;
+    width: 90%;
+    height: 50%;
+    position: absolute;
+    top: 25%;
+    left: 90px;
+}
+
+.support .text {
+    background: rgb(0 0 0 / 40%);
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px #ccc;
+    padding: 1rem;
+}
+
+.support .text input,
+.support .text select,
+.support .text textarea,
+.support .text button {
+    border-radius: 2px;
+    margin-bottom: 10px;
+    border: none;
+    padding: 10px;
+    margin: 10px;
+    width: 45%;
+    display: inline-block;
+    box-shadow: 0px 0px 5px #ccc;
+}
+
+.support .text textarea {
+    width: 95%;
+    padding: 25px;
+}
+
+.support .text button {
+    color: var(--main-color);
+    width: 16%;
+}
+
+/* end support us */
+/* strat footer */
+footer{
+background-color: var(--p-color);
+color: var(--main-color);
+}
+footer .left, footer .middle,footer .right{
+width: calc(100%/3.5);
+display: inline-block;
+
+}
+
+footer .middle{
+    padding-top: 20px;
+    margin-right: 30px;
+    text-align: center;
+}
+footer .middle h3{
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+footer .right {
+    position: relative;
+    bottom: 35px;
+}
+footer .right label{
+font-weight: bold;
+font-size: 25px;
+}
+footer .right input{
+    display: inline-block;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid var(--sec-color);
+    background-color: var(--p-color);
+}
+footer .right .icon{
+    width: 60px;
+    height: 35px;
+    display: inline-block;
+    background-color:var(--sec-color);
+    text-align: center;
+    margin-left: 15px;
+}
+footer .right a{
+    color: var(--main-color);
+    font-size: 25px;
+    display: inline-block;
+}
+/* end footer */
