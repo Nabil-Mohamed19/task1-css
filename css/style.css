@@ -71,7 +71,7 @@ header ul li {
 /* end header */
 /* start Home  */
 .home {
-    background-image: url("/images/bc.jpg");
+    background-image: url("../images/bc.jpg");
     height: 88vh;
     background-size: cover;
     text-align: center;
